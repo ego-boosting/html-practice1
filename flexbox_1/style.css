@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: boder-box;
+  box-sizing: border-box;
 }
 
 .header{
@@ -11,14 +11,14 @@
   justify-content: flex-end;
 }
 
-.header>div{
+.header > div{
   background-color: #fbb3ff;
   flex-basis: 140px;
   height: 70px;
-  margin: 0 10px;
+  margin: 0 10px
 }
 
-.header>:first-child{
+.header > :first-child{
   margin-right: auto;
 }
 
@@ -36,8 +36,10 @@
   background-color: #00b522;
   padding: 20px;
   max-width: 700px;
+  /*何故flex-growが必要なのか*/
   flex-grow: 1;
-  display:flex;
+  display: flex;
+  /*flex-wrapの記述が何故いるか*/
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -53,14 +55,15 @@
   background-color: #52a1ff;
   padding: 20px;
   display: flex;
+  /*flex-wrapの記述が何故いるか*/
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .footer > div{
-  flex-basis: 45%;
-  max-width: 600px;
-  height: 40px;
+  background-color: #b6e7ff;
+  flex-basis:45%;
+  max-width:600px;
+  height:40px;
   margin:10px;
-  background-color: #b6e7ff
 }
